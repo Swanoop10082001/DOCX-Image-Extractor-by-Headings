@@ -188,7 +188,7 @@ python extractor.py
 
 The script processes the DOCX file and extracts images into folders named after document headings.
 
-![Application Execution](screenshots/Working.jpg)
+![Application Execution](Working.jpg)
 
 ---
 
@@ -196,7 +196,7 @@ The script processes the DOCX file and extracts images into folders named after 
 
 The tool automatically creates the output directory (`POC`) where all extracted images are stored.
 
-![Output Folder](screenshots/folder.jpg)
+![Output Root Folder](folder.jpg)
 
 ---
 
@@ -204,7 +204,7 @@ The tool automatically creates the output directory (`POC`) where all extracted 
 
 Each heading in the Word document becomes its own folder, containing all associated images.
 
-![Generated Folders](screenshots/folder2.jpg)
+![Generated Heading Folders](folder2.jpg)
 
 ---
 
@@ -212,7 +212,7 @@ Each heading in the Word document becomes its own folder, containing all associa
 
 The extracted evidence is neatly organized under the `POC` directory.
 
-![Project Structure](screenshots/folder1.jpg)
+![Project Structure](folder1.jpg)
 
 
 # 📝 License
