@@ -49,8 +49,6 @@ It is particularly useful for:
 
 - Python 3.9+
 - python-docx
-- os
-- re
 
 ---
 
@@ -207,13 +205,6 @@ Each heading in the Word document becomes its own folder, containing all associa
 ![Generated Heading Folders](folder2.jpg)
 
 ---
-
-### 📂 Project Structure
-
-The extracted evidence is neatly organized under the `POC` directory.
-
-![Project Structure](folder1.jpg)
-
 
 # 📝 License
 
