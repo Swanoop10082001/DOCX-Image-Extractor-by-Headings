@@ -45,75 +45,12 @@ It is particularly useful for:
 
 ---
 
-# 📸 Example
-
-## Input Word Document
-
-```
-Heading 1
-    Image
-    Image
-
-Heading 2
-    Image
-
-Heading 3
-    Image
-    Image
-    Image
-```
-
----
-
-## Output
-
-```
-Output/
-
-├── Heading 1/
-│   ├── image_1.png
-│   └── image_2.png
-│
-├── Heading 2/
-│   └── image_1.jpg
-│
-└── Heading 3/
-    ├── image_1.png
-    ├── image_2.png
-    └── image_3.png
-```
-
----
-
 # 🛠 Built With
 
 - Python 3.9+
 - python-docx
 - os
 - re
-
----
-
-# 📂 Project Structure
-
-```
-docx-image-extractor/
-│
-├── extractor.py
-├── README.md
-├── requirements.txt
-├── LICENSE
-├── .gitignore
-│
-├── sample/
-│   └── sample_report.docx
-│
-├── output/
-│
-└── screenshots/
-    ├── input.png
-    └── output.png
-```
 
 ---
 
@@ -169,39 +106,6 @@ Run
 ```bash
 python extractor.py
 ```
-
----
-
-# 📂 Output Structure
-
-```
-output/
-
-Authentication/
-
-Business Logic/
-
-SQL Injection/
-
-IDOR/
-
-XSS/
-```
-
-Each folder contains images extracted from that heading.
-
-Example
-
-```
-SQL Injection/
-
-image_1.png
-
-image_2.png
-
-image_3.png
-```
-
 ---
 
 # ⚙ How It Works
@@ -258,44 +162,6 @@ image_3.png
 | BMP | ✅ |
 | TIFF | ✅ |
 
----
-
-# 🧠 Algorithm
-
-```
-Load DOCX
-
-↓
-
-Read Paragraph
-
-↓
-
-Is Heading?
-
-↓
-
-Create Folder
-
-↓
-
-Search Images
-
-↓
-
-Extract Image
-
-↓
-
-Save Image
-
-↓
-
-Next Paragraph
-```
-
----
-
 # 📈 Performance
 
 - Supports documents with hundreds of pages.
@@ -316,71 +182,38 @@ Next Paragraph
 
 ---
 
-# 📷 Screenshots
+## 📷 Screenshots
 
-## Input
+### 🚀 Application Execution
 
-```
-Word Document
-```
+The script processes the DOCX file and extracts images into folders named after document headings.
 
-(Add screenshot here)
+![Application Execution](screenshots/Working.jpg)
 
 ---
 
-## Output
+### 📁 Output Root Folder
 
-```
-Output Folder
-```
+The tool automatically creates the output directory (`POC`) where all extracted images are stored.
 
-(Add screenshot here)
+![Output Folder](screenshots/folder.jpg)
 
 ---
 
-# 🛣 Roadmap
+### 📂 Generated Heading Folders
 
-- [ ] GUI Version (Tkinter)
-- [ ] Drag & Drop Support
-- [ ] Batch Processing
-- [ ] Progress Bar
-- [ ] ZIP Export
-- [ ] PDF Support
-- [ ] OCR Integration
-- [ ] Logging
-- [ ] Command Line Arguments
-- [ ] Configuration File
-- [ ] Recursive Folder Processing
+Each heading in the Word document becomes its own folder, containing all associated images.
+
+![Generated Folders](screenshots/folder2.jpg)
 
 ---
 
-# 🤝 Contributing
+### 📂 Project Structure
 
-Contributions are welcome!
+The extracted evidence is neatly organized under the `POC` directory.
 
-1. Fork the repository
+![Project Structure](screenshots/folder1.jpg)
 
-2. Create a feature branch
-
-```
-git checkout -b feature/NewFeature
-```
-
-3. Commit your changes
-
-```
-git commit -m "Added new feature"
-```
-
-4. Push
-
-```
-git push origin feature/NewFeature
-```
-
-5. Create a Pull Request
-
----
 
 # 📝 License
 
@@ -396,48 +229,12 @@ Feel free to use, modify, and distribute it.
 - python-docx Developers
 - Open Source Contributors
 
----
-
-# ⭐ Support
-
-If you found this project useful,
-
-⭐ Star this repository
-
-🍴 Fork it
-
-📢 Share it
-
----
 
 # 📬 Contact
 
-GitHub: **https://github.com/yourusername**
-
-Email: **your.email@example.com**
+GitHub: **https://github.com/swanoop10082001**
 
 ---
-
-# 🏷 Topics
-
-```
-python
-python-docx
-docx
-word
-office
-automation
-image-extractor
-report
-documentation
-security
-pentesting
-audit
-productivity
-```
-
----
-
 # 💡 Why Use This Project?
 
 Manually extracting images from Word documents can be time-consuming and error-prone, especially for large reports with numerous screenshots. This tool automates the process by organizing images according to document headings, making it ideal for security assessments, audit reporting, technical documentation, and evidence management. It significantly improves productivity while maintaining a clean and structured output.
